@@ -20,33 +20,17 @@ body{
     align-items: center;
 }
 .container{
-    max-width: 800px;
+    max-width: 400px;
     width: 100%;
     margin: 0 auto;
     background-color: var(--container-color);
-    display: flex;
-    border-radius: 25px 15px 15px 25px;
-}
-.weather-side{
-    width: 45%;
-    background: url(images/weather-bg.jpg);
     border-radius: 25px;
+}
+.weather-info{
+    width: 100%;
     padding: 1.5rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    isolation: isolate;
 }
-.weather-side::after{
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom right, #67e8f9, #3730a3);
-    z-index: -1;
-    opacity: .7;
-    border-radius: 25px;
-}
+
 .dayname{
     color: white;
     font-weight: 700;
@@ -57,16 +41,19 @@ body{
 }
 .location-wrap{
     padding-top: .7rem;
+    padding-bottom: 2rem;
     display: flex;
     align-items: center;
-    gap: .5rem;
+    justify-content: center;
+
 }
 .location-logo{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: .5rem;
 }
-.location{
+.location, .country{
     font-size: 1.1rem;
     color: white;
 }
@@ -75,7 +62,7 @@ body{
     text-align: center;
 }
 .temperature{
-    font-size: 6rem;
+    font-size: 4rem;
     color: white;
     font-weight: 600;
 }
@@ -85,55 +72,24 @@ body{
     justify-content: center;
     gap: .5rem;
 }
-.weather-description{
-    font-size: 1.1rem;
-    color: white;
-    font-weight: 500;
-}
-.info-side{
-    width: 55%;
-}
-.info-container{
-    padding-top: 2rem;
-    width: 380px;
-    margin: 0 auto;
-}
-.precipitation-wrap, .humidity-wrap, .wind-wrap{
+.tempFl-wrap, .humidity-wrap, .wind-wrap{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: .5rem;
 }
-.preci-span, .humi-span, .wind-span{
+.fl-span, .humi-span, .wind-span{
     color: var(--font-color);
     font-weight: 600;
 }
-.precipitation, .humidity, .wind-speed{
+.feels-like, .humidity, .wind-speed{
     color: var(--font-color);
 }
-.weekly-info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 3rem;
-}
-.weather-day-wrap{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: .5rem;
-}
-.day{
-    color: var(--font-color);
-    font-weight: 300;
-}
-.temp{
-    color: var(--font-color);
-    font-weight: 700;
-}
+
 .search-wrap{
-    padding-top: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,4 +103,24 @@ input[type="text"]{
 }
 input[type="text"]::placeholder{
     color: var(--font-color);
+}
+.searchIcon{
+    cursor: pointer;
+}
+
+.change-unit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+.change-unit-btn{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    padding: .5rem;
+    color: white;
+    font-size: .9rem;
+    cursor: pointer;
 }
