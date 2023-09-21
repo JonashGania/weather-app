@@ -1,6 +1,6 @@
 const apiKey = 'c359d505fd1ccc37e00fc497f93bccb4';
 
-async function fetchWeatherData(city){
+async function fetchWeatherDataMetric(city){
     try{
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apiKey}`, {mode: 'cors'});
     
@@ -18,6 +18,5 @@ async function fetchWeatherData(city){
     }
 }
 
-
-export { fetchWeatherData }
+export { fetchWeatherDataMetric }
 
