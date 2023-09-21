@@ -1,25 +1,28 @@
-import { fetchWeatherData } from "./modules/apiFunctions";
-import { displayWeatherData } from "./modules/dom";
+import { fetchWeatherDataMetric } from "./modules/apiFunctions";
+import { displayWeatherDataMetric } from "./modules/dom";
 
 
 const searchIcon = document.querySelector('.searchIcon');
 const searchInput = document.getElementById('search-location');
 
 async function initialLoad(){
-    const currentCity = await fetchWeatherData('Tokyo');
-    displayWeatherData(currentCity);
+    const currentCity = await fetchWeatherDataMetric('Tokyo');
+    displayWeatherDataMetric(currentCity);
 }
 
 async function handleSearch(){
     const searchCity = searchInput.value.trim();
+    const errorMessage = document.querySelector('.error-message');
+
 
     try{
-        const weatherData = await fetchWeatherData(searchCity);
-        displayWeatherData(weatherData);
+        const weatherData = await fetchWeatherDataMetric(searchCity);
+        displayWeatherDataMetric(weatherData);
         searchInput.value = '';
+        errorMessage.textContent = '';
 
     } catch (error){
-        console.error('Failed to fetch weather data:', error);
+        errorMessage.textContent = `${error}. Check input location.`;
     }
 }
 
@@ -31,5 +34,6 @@ searchInput.addEventListener('keydown', (event) => {
         handleSearch();
     }
 })
+
 
 initialLoad();
