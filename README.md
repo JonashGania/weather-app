@@ -11,3 +11,5 @@ Feature Ideas to Implement.
 
 - 7 day weather forecast.
 - Get user location by default.
+
+Live preview here: https://jonashgania.github.io/weather-app/
