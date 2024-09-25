@@ -1,9 +1,21 @@
 import { checkWeatherIcon, formatTime } from "./utils";
 
 const DisplayHourlyForecast = (hourlyData) => {
+  const hourlyForecastContent = document.querySelector(
+    ".hourly-forecast-content"
+  );
+  const hourlyTitleContainer = document.querySelector(
+    ".hourly-title-container"
+  );
+  const nowSpan = document.querySelector(".now-span");
   const hourlyForecastWrapper = document.querySelector(
     ".hourly-forecast-wrapper"
   );
+
+  hourlyForecastContent.classList.remove("skeleton");
+  hourlyTitleContainer.classList.remove("hidden");
+  nowSpan.classList.remove("hidden");
+  hourlyForecastWrapper.innerHTML = "";
 
   hourlyData.forEach((hour) => {
     const hourForecast = document.createElement("li");
