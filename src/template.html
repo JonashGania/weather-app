@@ -14,45 +14,57 @@
   </head>
   <body>
     <header>
-      <div class="search-container">
-        <div class="input-container">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 11.5C11.337 11.5 10.7011 11.2366 10.2322 10.7678C9.76339 10.2989 9.5 9.66304 9.5 9C9.5 8.33696 9.76339 7.70107 10.2322 7.23223C10.7011 6.76339 11.337 6.5 12 6.5C12.663 6.5 13.2989 6.76339 13.7678 7.23223C14.2366 7.70107 14.5 8.33696 14.5 9C14.5 9.3283 14.4353 9.65339 14.3097 9.95671C14.1841 10.26 13.9999 10.5356 13.7678 10.7678C13.5356 10.9999 13.26 11.1841 12.9567 11.3097C12.6534 11.4353 12.3283 11.5 12 11.5ZM12 2C10.1435 2 8.36301 2.7375 7.05025 4.05025C5.7375 5.36301 5 7.14348 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 7.14348 18.2625 5.36301 16.9497 4.05025C15.637 2.7375 13.8565 2 12 2Z"
-              fill="#535353"
+      <div class="search-wrapper">
+        <div class="search-container">
+          <div class="input-container">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 11.5C11.337 11.5 10.7011 11.2366 10.2322 10.7678C9.76339 10.2989 9.5 9.66304 9.5 9C9.5 8.33696 9.76339 7.70107 10.2322 7.23223C10.7011 6.76339 11.337 6.5 12 6.5C12.663 6.5 13.2989 6.76339 13.7678 7.23223C14.2366 7.70107 14.5 8.33696 14.5 9C14.5 9.3283 14.4353 9.65339 14.3097 9.95671C14.1841 10.26 13.9999 10.5356 13.7678 10.7678C13.5356 10.9999 13.26 11.1841 12.9567 11.3097C12.6534 11.4353 12.3283 11.5 12 11.5ZM12 2C10.1435 2 8.36301 2.7375 7.05025 4.05025C5.7375 5.36301 5 7.14348 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 7.14348 18.2625 5.36301 16.9497 4.05025C15.637 2.7375 13.8565 2 12 2Z"
+                fill="#535353"
+              />
+            </svg>
+            <input
+              type="text"
+              class="search-bar"
+              id="search-input-city"
+              placeholder="Enter a city"
+              autocomplete="off"
             />
-          </svg>
-          <input type="text" class="search-bar" placeholder="Enter a city" />
+          </div>
+          <button class="search-btn">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24.5 26.25L16.625 18.375C16 18.875 15.2813 19.2708 14.4688 19.5625C13.6563 19.8542 12.7917 20 11.875 20C9.60417 20 7.6825 19.2133 6.11 17.64C4.5375 16.0667 3.75083 14.145 3.75 11.875C3.74917 9.605 4.53583 7.68333 6.11 6.11C7.68417 4.53667 9.60583 3.75 11.875 3.75C14.1442 3.75 16.0663 4.53667 17.6413 6.11C19.2163 7.68333 20.0025 9.605 20 11.875C20 12.7917 19.8542 13.6562 19.5625 14.4687C19.2708 15.2812 18.875 16 18.375 16.625L26.25 24.5L24.5 26.25ZM11.875 17.5C13.4375 17.5 14.7658 16.9533 15.86 15.86C16.9542 14.7667 17.5008 13.4383 17.5 11.875C17.4992 10.3117 16.9525 8.98375 15.86 7.89125C14.7675 6.79875 13.4392 6.25167 11.875 6.25C10.3108 6.24833 8.98292 6.79542 7.89125 7.89125C6.79958 8.98708 6.2525 10.315 6.25 11.875C6.2475 13.435 6.79458 14.7633 7.89125 15.86C8.98792 16.9567 10.3158 17.5033 11.875 17.5Z"
+                fill="white"
+              />
+            </svg>
+          </button>
         </div>
-        <button class="search-btn">
-          <svg
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M24.5 26.25L16.625 18.375C16 18.875 15.2813 19.2708 14.4688 19.5625C13.6563 19.8542 12.7917 20 11.875 20C9.60417 20 7.6825 19.2133 6.11 17.64C4.5375 16.0667 3.75083 14.145 3.75 11.875C3.74917 9.605 4.53583 7.68333 6.11 6.11C7.68417 4.53667 9.60583 3.75 11.875 3.75C14.1442 3.75 16.0663 4.53667 17.6413 6.11C19.2163 7.68333 20.0025 9.605 20 11.875C20 12.7917 19.8542 13.6562 19.5625 14.4687C19.2708 15.2812 18.875 16 18.375 16.625L26.25 24.5L24.5 26.25ZM11.875 17.5C13.4375 17.5 14.7658 16.9533 15.86 15.86C16.9542 14.7667 17.5008 13.4383 17.5 11.875C17.4992 10.3117 16.9525 8.98375 15.86 7.89125C14.7675 6.79875 13.4392 6.25167 11.875 6.25C10.3108 6.24833 8.98292 6.79542 7.89125 7.89125C6.79958 8.98708 6.2525 10.315 6.25 11.875C6.2475 13.435 6.79458 14.7633 7.89125 15.86C8.98792 16.9567 10.3158 17.5033 11.875 17.5Z"
-              fill="white"
-            />
-          </svg>
-        </button>
+        <p class="no-results"></p>
       </div>
-      <div class="switch-btn-container"></div>
+      <div class="switch-btn-container">
+        <input type="checkbox" id="btn-indicator" />
+        <label for="btn-indicator" class="btn-slider"></label>
+      </div>
     </header>
     <main>
       <div class="main-content">
         <div class="weather-info-container">
-          <h2 class="city"></h2>
-          <h1 class="temperature"></h1>
-          <h3 class="weather-type"></h3>
+          <h2 class="city skeleton"></h2>
+          <h1 class="temperature skeleton"></h1>
+          <h3 class="weather-type skeleton"></h3>
           <div class="weather-condition-container">
             <div class="feelslike-container">
               <div>
@@ -115,8 +127,8 @@
           </div>
         </div>
 
-        <div class="hourly-forecast-container">
-          <div class="hourly-title-container">
+        <div class="hourly-forecast-content skeleton">
+          <div class="hourly-title-container hidden">
             <svg
               width="20"
               height="20"
@@ -131,17 +143,18 @@
             </svg>
             <span>Hourly Forecast</span>
           </div>
-          <ul class="hourly-forecast-wrapper">
+          <div class="hourly-forecast-container">
             <div class="hour-forecast">
-              <span class="now-span">Now</span>
+              <span class="now-span hidden">Now</span>
               <div class="weather-now-condition-icon"></div>
               <span class="hourly-now-temp"></span>
             </div>
-          </ul>
+            <ul class="hourly-forecast-wrapper"></ul>
+          </div>
         </div>
 
-        <div class="daily-forecast-container">
-          <div class="daily-title-container">
+        <div class="daily-forecast-content skeleton">
+          <div class="daily-title-container hidden">
             <svg
               width="25"
               height="25"
@@ -156,8 +169,8 @@
             </svg>
             <span>14-Day Forecast</span>
           </div>
-          <div class="daily-forecast-wrapper">
-            <div class="daily-forecast-heading row">
+          <div class="daily-forecast-container">
+            <div class="daily-forecast-heading row hidden">
               <div class="column-1">
                 <span>DAY</span>
               </div>
@@ -172,6 +185,7 @@
                 <span>HIGH/LOW</span>
               </div>
             </div>
+            <ul class="daily-forecast-wrapper"></ul>
           </div>
         </div>
       </div>
