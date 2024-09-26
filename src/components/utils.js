@@ -85,16 +85,16 @@ const applySkeletonLoader = () => {
   const nowSpan = document.querySelector(".now-span");
   const dailyTitleContainer = document.querySelector(".daily-title-container");
   const hourlyForecastContent = document.querySelector(
-    ".hourly-forecast-content"
+    ".hourly-forecast-content",
   );
   const hourlyTitleContainer = document.querySelector(
-    ".hourly-title-container"
+    ".hourly-title-container",
   );
   const dailyForecastContent = document.querySelector(
-    ".daily-forecast-content"
+    ".daily-forecast-content",
   );
   const dailyForecastHeading = document.querySelector(
-    ".daily-forecast-heading"
+    ".daily-forecast-heading",
   );
 
   city.classList.add("skeleton");
@@ -122,7 +122,7 @@ const fahrenheitToCelcius = (fahrenheit) => {
 
 const updateTemperature = (isCelcius) => {
   const allTempElements = document.querySelectorAll(
-    ".temperature, .feels-like, .hourly-temp, .high-temp, .low-temp, .hourly-now-temp"
+    ".temperature, .feels-like, .hourly-temp, .high-temp, .low-temp, .hourly-now-temp",
   );
 
   allTempElements.forEach((tempElements) => {
