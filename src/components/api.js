@@ -41,7 +41,7 @@ async function searchCityWeatherData() {
     noResultsMessage.textContent = "";
   } catch (error) {
     displayNoResultsFound(
-      `No results found. Try putting the city's name or point of interest.`
+      `No results found. Try putting the city's name or point of interest.`,
     );
     console.error(error);
   }
