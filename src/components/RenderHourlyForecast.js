@@ -2,14 +2,14 @@ import { checkWeatherIcon, formatTime } from "./utils";
 
 const DisplayHourlyForecast = (hourlyData) => {
   const hourlyForecastContent = document.querySelector(
-    ".hourly-forecast-content"
+    ".hourly-forecast-content",
   );
   const hourlyTitleContainer = document.querySelector(
-    ".hourly-title-container"
+    ".hourly-title-container",
   );
   const nowSpan = document.querySelector(".now-span");
   const hourlyForecastWrapper = document.querySelector(
-    ".hourly-forecast-wrapper"
+    ".hourly-forecast-wrapper",
   );
 
   hourlyForecastContent.classList.remove("skeleton");
