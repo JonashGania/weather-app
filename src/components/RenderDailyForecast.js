@@ -7,14 +7,14 @@ import {
 
 const DisplayDailyForecast = (dailyData) => {
   const dailyForecastContent = document.querySelector(
-    ".daily-forecast-content"
+    ".daily-forecast-content",
   );
   const dailyTitleContainer = document.querySelector(".daily-title-container");
   const dailyForecastHeading = document.querySelector(
-    ".daily-forecast-heading"
+    ".daily-forecast-heading",
   );
   const dailyForecastWrapper = document.querySelector(
-    ".daily-forecast-wrapper"
+    ".daily-forecast-wrapper",
   );
 
   dailyForecastContent.classList.remove("skeleton");
@@ -54,11 +54,11 @@ const DisplayDailyForecast = (dailyData) => {
     `;
 
     const dailyWeatherContainer = rowContainer.querySelector(
-      ".daily-weather-container"
+      ".daily-weather-container",
     );
     dailyWeatherContainer.insertBefore(
       weatherIcon,
-      dailyWeatherContainer.firstChild
+      dailyWeatherContainer.firstChild,
     );
 
     dailyForecastWrapper.appendChild(rowContainer);
