@@ -55,7 +55,7 @@ main {
 }
 .no-results {
   padding-top: 0.5rem;
-  color: #bbbbbb;
+  color: #fc0404;
   font-weight: 300;
   font-size: 0.9rem;
 }
@@ -339,6 +339,7 @@ main {
   margin: 0 auto;
   border-radius: 5px;
   margin-top: 2rem;
+  color: transparent;
 }
 .temperature.skeleton {
   width: 200px;
@@ -346,6 +347,7 @@ main {
   margin: 0 auto;
   border-radius: 5px;
   margin-top: 2rem;
+  color: transparent;
 }
 .hourly-forecast-content.skeleton {
   height: 220px;
@@ -360,6 +362,7 @@ main {
   border-radius: 5px;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  color: transparent;
 }
 
 .skeleton {
@@ -375,6 +378,7 @@ main {
   animation: shine 1s ease infinite;
   -webkit-animation: shine 1s ease infinite;
 }
+
 @keyframes shine {
   to {
     background-position: right -40px top 0;
